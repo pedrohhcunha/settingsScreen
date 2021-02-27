@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/27b9c83134.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="style.css">
+    <title>Tela de configurações</title>
+</head>
+<body>
+    <div class="container-configs">
+        <menu>
+            <header>
+                <h1>configurações</h1>
+            </header>
+            <div class="conteudo-menu">
+                <div class="option-conteudo-menu-configs active">
+                    <h1>Perfil</h1>
+                </div>
+                <div class="option-conteudo-menu-configs">
+                    <h1>Privacidade e Segurança</h1>
+                </div>
+                <div class="option-conteudo-menu-configs">
+                    <h1>Sobre a Pets</h1>
+                </div>
+            </div>  
+        </menu>
+        <main id="perfil">
+            <header>
+                <i class="fas fa-arrow-left seta-voltrar-configs"></i>
+                <h1>Perfil</h1>
+                <i class="fas fa-arrow-left"></i>
+            </header>
+            <div class="conteudo-main perfil">
+                <div class="option-couteudo-main-configs perfil">
+                    <i class="fas fa-user-circle"></i>
+                    <div>
+                        <h1>Nome de Usuario</h1>
+                        <h2>Pedroh_hcunha</h2>
+                    </div>
+                </div>
+                <div onclick="abrirModalConfig(0)" class="option-couteudo-main-configs perfil">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h1>Telefone</h1>
+                        <h2 id="conteudoInputModalTelefone">(49) 9 8838-7890</h2>
+                    </div>
+                </div>
+                <div onclick="abrirModalConfig(1)" class="option-couteudo-main-configs perfil">
+                    <i class="fas fas fa-mail-bulk"></i>
+                    <div>
+                        <h1>Email</h1>
+                        <h2>phhcpedrohhcunha@gmail.com</h2>
+                    </div>
+                </div>
+                <div onclick="abrirModalConfig(2)" class="option-couteudo-main-configs perfil">
+                    <i class="fas fas fa-fingerprint"></i>
+                    <div>
+                        <h1>CPF</h1>
+                        <h2>Não Informado</h2>
+                    </div>
+                </div>
+                <div onclick="abrirModalConfig(3)" class="option-couteudo-main-configs perfil">
+                    <i class="fas fa-lock"></i>
+                    <div>
+                        <h1>Senha</h1>
+                        <h2>***************</h2>
+                    </div>
+                </div>
+                <div onclick="abrirModalConfig(4)" class="option-couteudo-main-configs perfil">
+                    <i class="far fa-user"></i>
+                    <div>
+                        <h1>Sexo</h1>
+                        <h2>Masculino</h2>
+                    </div>
+                </div>
+                <div class="option-couteudo-main-configs perfil">
+                    <i class="far fa-calendar"></i>
+                    <div>
+                        <h1>Data de Nascimento</h1>
+                        <h2>10/05/2004</h2>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <main id="priv-seg">
+            <header>
+                <i class="fas fa-arrow-left seta-voltrar-configs"></i>
+                <h1>Privacidade e segurança</h1>
+                <i class="fas fa-arrow-left"></i>
+            </header>
+            <div class="conteudo-main priv-seg">
+                <div class="info-conteudo-main-configs priv-seg">
+                    <i class="fas fa-eye"></i>
+                    <p>Privacidade: Receba ofertas e novidades pelas opções abaixo:</p>
+                </div>
+
+                <div class="option-couteudo-main-configs priv-seg">
+                    <div>
+                        <i class="fas fas fa-sms"></i>
+                        <div>
+                            <h1>SMS</h1>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="option-couteudo-main-configs priv-seg">
+                    <div>
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h1>Whatsapp</h1>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="option-couteudo-main-configs priv-seg">
+                    <div>
+                        <i class="fas fas fa-mail-bulk"></i>
+                        <div>
+                            <h1>Email</h1>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <main id="sobre-pets">
+            <header>
+                <i class="fas fa-arrow-left seta-voltrar-configs"></i>
+                <h1>Sobre a pets</h1>
+                <i class="fa-arrow-left"></i>
+            </header>
+            <div class="conteudo-main sobre-pets">
+                <div class="option-couteudo-main-configs sobre-pets">
+                    <div>
+                        <i class="fas fa-cookie-bite"></i>
+                        <div>
+                            <h1>Cookies</h1>
+                        </div>
+                    </div>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="option-couteudo-main-configs sobre-pets">
+                    <div>
+                        <i class="far fa-newspaper"></i>
+                        <div>
+                            <h1>Termos de uso</h1>
+                        </div>
+                    </div>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="option-couteudo-main-configs sobre-pets">
+                    <div>
+                        <i class="fas fa-newspaper"></i>
+                        <div>
+                            <h1>Politica de Privacidade</h1>
+                        </div>
+                    </div>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+        </main>
+    </div>
+
+        <!--MODAIS-->
+
+        <div class="modal-configs">
+            <div class="icon-nome">
+                <i class="fas fa-phone"></i>
+                <h1>Telefone</h1>
+            </div>
+            <span>Numero do telefone</span>
+            <form action="">
+                <input id="inputModaltelefone" type="text">
+    
+                <div class="area-btns">
+                    <a class="btnFecharModal">Cancelar</a>
+                    <a type="submit">OK</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="modal-configs">
+            <div class="icon-nome">
+                <i class="fas fa-mail-bulk"></i>
+                <h1>Email</h1>
+            </div>
+            <span>Email</span>
+            <form action="">
+                <input type="email">
+    
+                <div class="area-btns">
+                    <a class="btnFecharModal">Cancelar</a>
+                    <a type="submit">OK</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="modal-configs">
+            <div class="icon-nome">
+                <i class="fas fa-fingerprint"></i>
+                <h1>CPF</h1>
+            </div>
+            <span>CPF</span>
+            <form action="">
+                <input type="text">
+    
+                <div class="area-btns">
+                    <a class="btnFecharModal">Cancelar</a>
+                    <a type="submit">OK</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="modal-configs">
+            <div class="icon-nome">
+                <i class="fas fa-lock"></i>
+                <h1>Senha</h1>
+            </div>
+            <span>Senha atual</span>
+            <form action="">
+                <input type="password">
+                
+                <span>Nova senha</span>
+                <input type="password">
+
+                <span>Confirmar senha</span>
+                <input type="password">
+
+
+                <div class="area-btns">
+                    <a class="btnFecharModal">Cancelar</a>
+                    <a type="submit">OK</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="modal-configs">
+            <div class="icon-nome">
+                <i class="far fa-user-circle"></i>
+                <h1>Sexo</h1>
+            </div>
+            <span>Escolha uma opção</span>
+            <form action="">
+
+                <input type="radio" name="radio">
+                <label for="">Masculino</label>
+
+                <br>
+
+                <input type="radio" name="radio">
+                <label for="">Feminino</label>
+
+                <div class="area-btns">
+                    <a class="btnFecharModal">Cancelar</a>
+                    <a type="submit">OK</a>
+                </div>
+            </form>
+        </div>
+
+
+    
+    <!--MODAIS-->
+    <script src="controlador-modal.js"></script>
+    <script src="controlador-checkbox.js"></script>
+    <script src="controlador-main.js"></script>
+</body>
+</html>

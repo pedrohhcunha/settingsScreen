@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #04111f;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.container-configs{
+    height: 100%;
+    min-width: 700px;
+    width: 80%;
+    display: flex;
+    overflow: hidden;
+}
+.container-configs menu, .container-configs main{
+    height: 100%;
+    background-color: #04111f;
+    display: grid;
+    grid-template-rows: 6% 94%;
+    overflow: hidden;
+}
+.container-configs menu{
+    width: 30%;
+    border-right: 2px solid #02080f;
+    border-left: 4px solid #02080f;
+}
+.container-configs menu header, .container-configs main header{
+    background-color: #02080f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-configs menu header h1, .container-configs main header h1{
+    color: #ddd;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.container-configs main header i{
+    display: none;
+}
+.option-conteudo-menu-configs{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #04111f;
+    padding-left: 10px;
+    border-bottom: 3px solid #02080f;
+    cursor: pointer;
+}
+.option-conteudo-menu-configs:hover{
+    background-color: #061a30;
+    transition: .3s;
+}
+.option-conteudo-menu-configs.active{
+    background-color: #061a30;
+}
+.option-conteudo-menu-configs h1{
+    font-size: 18px;
+    color: #ddd;
+}
+.container-configs main{
+    width: 70%;
+    border-left: 2px solid #02080f;
+    border-right: 4px solid #02080f;
+}
+.container-configs main .conteudo-main{
+    overflow-y: auto;
+}
+
+/***************** MAIN PERFIL ******************/
+.option-couteudo-main-configs.perfil{
+    width: 100%;
+    height: 80px;
+    border-bottom: 3px solid #02080f;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.option-couteudo-main-configs.perfil:hover{
+    background-color: #061a30;
+    transition: .3s;
+}
+.option-couteudo-main-configs.perfil i{
+    font-size: 25px;
+    color: rgb(24, 167, 155);
+    margin-right: 20px;
+}
+.option-couteudo-main-configs.perfil div h1{
+    font-size: 26px;
+    color: #ddd;
+}
+.option-couteudo-main-configs.perfil div h2{
+    font-size: 20px;
+    color: #626262;
+}
+/***************** MAIN PERFIL ******************/
+/***************** MAIN PRIVACIDADE E SEGURANÇA ******************/
+.info-conteudo-main-configs.priv-seg{
+    width: 100%;
+    height: 100px;
+    border-bottom: 3px solid #02080f;
+    text-align: center;
+    justify-content: left;
+    padding: 10px;
+}
+.info-conteudo-main-configs.priv-seg i{
+    font-size: 30px;
+    color: #18a79b;
+    margin-bottom: 5px;
+}
+.info-conteudo-main-configs.priv-seg p{
+    font-size: 18px;
+    color: #ddd;
+}
+.option-couteudo-main-configs.priv-seg{
+    width: 100%;
+    height: 80px;
+    border-bottom: 3px solid #02080f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.option-couteudo-main-configs.priv-seg .checkbox{
+    width: 60px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: #ddd;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.option-couteudo-main-configs.priv-seg .checkbox .circle{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: .5s;
+    transform: translate3d(0px, 0px, 0px);
+    transition: .2s;
+}
+.option-couteudo-main-configs.priv-seg .checkbox.active{
+    background-color: turquoise;
+}
+.option-couteudo-main-configs.priv-seg .checkbox.active .circle{
+    transform: translate3d(40px, 0px, 0px);
+}
+.option-couteudo-main-configs.priv-seg div{
+    display: flex;
+}
+.option-couteudo-main-configs.priv-seg div i{
+    font-size: 25px;
+    color: #18a79b;
+    margin-right: 20px;
+}
+.option-couteudo-main-configs.priv-seg div div h1{
+    font-size: 26px;
+    color: #ddd;
+}
+.option-couteudo-main-configs.priv-seg div div h2{
+    font-size: 20px;
+    color: #626262;
+}
+/***************** MAIN PRIVACIDADE E SEGURANÇA ******************/
+/***************** MAIN SOBRE A PETS ******************/
+.option-couteudo-main-configs.sobre-pets{
+    width: 100%;
+    height: 80px;
+    border-bottom: 3px solid #02080f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.option-couteudo-main-configs.sobre-pets:hover{
+    background-color: #061a30;
+    transition: .3s;
+}
+.option-couteudo-main-configs.sobre-pets i{
+    font-size: 25px;
+    color: #18a79b;
+    margin-right: 20px;
+    transform: rotate(-45deg);
+}
+.option-couteudo-main-configs.sobre-pets div{
+    display: flex;
+}
+.option-couteudo-main-configs.sobre-pets div i{
+    font-size: 25px;
+    color: #18a79b;
+    margin-right: 20px;
+}
+.option-couteudo-main-configs.sobre-pets div div h1{
+    font-size: 26px;
+    color: #ddd;
+}
+.option-couteudo-main-configs.sobre-pets div div h2{
+    font-size: 20px;
+    color: #626262;
+}
+/***************** MAIN SOBRE A PETS ******************/
+#perfil, #priv-seg, #sobre-pets{
+    display: none;
+}
+#perfil.active, #priv-seg.active, #sobre-pets.active{
+    display: grid;
+}
+.modal-configs{
+    max-width: 400px;
+    width: 80%;
+    padding: 20px;
+    border-radius: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0px);
+    background-color: #061a30;
+    display: none;
+    opacity: 0;
+    scale: 0.9;
+    transition: .5s;
+}
+.modal-configs.active{
+    display: block;
+    opacity: 1;
+    scale: 1;
+}
+.modal-configs .icon-nome{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 10px;
+}
+.modal-configs .icon-nome i{
+    font-size: 25px;
+    color: #18a79b;
+    margin-right: 15px;
+}
+.modal-configs .icon-nome h1{
+    font-size: 20px;
+    color: #ddd;
+}
+.modal-configs span{
+    font-size: 15px;
+    color: #ddd;
+    text-align: left;
+}
+.modal-configs input[type="text"], .modal-configs input[type="password"], .modal-configs input[type="email"]{
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #18a79b;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #ddd;
+    font-size: 18px;
+}
+.modal-configs input[type="radio"]:nth-child(1){
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.modal-configs input[type="radio"]:nth-child(2){
+    margin-bottom: 15px;
+}
+.modal-configs label{
+    color: #ddd;
+    font-size: 20px;
+}
+.modal-configs .area-btns{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    font-size: 20px;
+    color: #18a79b;
+    cursor: pointer;
+}
+.modal-configs .area-btns a:nth-child(1){
+    margin-right: 10px;
+}
+
+
+@media (max-width: 700px) {
+    .container-configs{
+        min-width: 0px;
+        width: 100vw;
+        display: flex;
+    }
+    .container-configs menu{
+        width: 100vw;
+        border-right: 2px solid #02080f;
+        border-left: 4px solid #02080f;
+        flex: none;
+        z-index: 999;
+    }
+    .container-configs main{
+        width: 100vw;
+        border-left: 2px solid #02080f;
+        border-right: 4px solid #02080f;
+        flex: none;
+        z-index: 1000;
+        transform: translate3d(0px, 0px, 0px);
+    }
+    #perfil, #priv-seg, #sobre-pets{
+        display: grid;
+        transform: translate3d(0px, 0px, 0px);
+        transition: .5s;
+    }
+    #perfil.active, #priv-seg.active, #sobre-pets.active{
+        display: grid;
+        transition: .5s;
+    }
+    #perfil.active{
+        transform: translate3d(-100%, 0px, 0px);
+    }
+    #priv-seg.active{
+        transform: translate3d(-200%, 0px, 0px);
+    }
+    #sobre-pets.active{
+        transform: translate3d(-300%, 0px, 0px);
+    }
+    .container-configs main header{
+        background-color: #02080f;
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+    .container-configs main header h1{
+        text-align: center;
+    }
+    .container-configs main header i:nth-child(1){
+        display: block;
+        font-size: 25px;
+        color: #ddd;
+        padding-left: 20px;
+    }
+    .container-configs menu, .container-configs main{
+        grid-template-rows: 10% 90%;
+    }
+    .option-conteudo-menu-configs{
+        height: 80px;
+    }
+
+    .option-couteudo-main-configs.perfil div h1{
+        font-size: 18px;
+    }
+    .option-couteudo-main-configs.perfil div h2{
+        font-size: 15px;
+    }
+
+    .option-couteudo-main-configs.priv-seg div div h1{
+        font-size: 17px;
+    }
+
+    .option-couteudo-main-configs.sobre-pets div div h1{
+        font-size: 17px;
+    }
+}
